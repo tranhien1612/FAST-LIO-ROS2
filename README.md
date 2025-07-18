@@ -45,9 +45,12 @@ mkdir -p lidar_ws/src
 cd lidar_ws/src
 
 git clone https://github.com/Livox-SDK/livox_ros_driver2.git
-git clone https://github.com/tranhien1612/FAST-LIO-ROS2.git
+git clone https://github.com/Ericsii/FAST_LIO_ROS2.git --recursive
 
-cd livox_ros_driver2
+cd ..
+rosdep install --from-paths src --ignore-src -y
+
+cd src/livox_ros_driver2
 ./build humble
 ```
 

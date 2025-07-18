@@ -45,7 +45,7 @@ mkdir -p lidar_ws/src
 cd lidar_ws/src
 
 git clone https://github.com/Livox-SDK/livox_ros_driver2.git
-git clone https://github.com/Ericsii/FAST_LIO_ROS2.git --recursive
+git clone https://github.com/tranhien1612/FAST-LIO-ROS2.git
 
 cd ..
 rosdep install --from-paths src --ignore-src -y
@@ -60,3 +60,7 @@ ros2 launch livox_ros_driver2 msg_MID360.launch.py
 
 ros2 launch fast_lio mapping.launch.py
 ```
+
+
+# Ref
+[FAST_LIO_ROS2](https://github.com/Ericsii/FAST_LIO_ROS2.git)

@@ -47,9 +47,6 @@ cd lidar_ws/src
 git clone https://github.com/Livox-SDK/livox_ros_driver2.git
 git clone https://github.com/tranhien1612/FAST-LIO-ROS2.git
 
-cd ..
-rosdep install --from-paths src --ignore-src -y
-
 cd src/livox_ros_driver2
 ./build humble
 ```
